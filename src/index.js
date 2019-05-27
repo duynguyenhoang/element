@@ -77,6 +77,7 @@ import Image from '../packages/image/index.js';
 import Calendar from '../packages/calendar/index.js';
 import locale from 'element-ui/src/locale';
 import CollapseTransition from 'element-ui/src/transitions/collapse-transition';
+import Drawer from '../packages/drawer/index.js';
 
 const components = [
   Pagination,
@@ -150,7 +151,8 @@ const components = [
   Divider,
   Image,
   Calendar,
-  CollapseTransition
+  CollapseTransition,
+  Drawer
 ];
 
 const install = function(Vue, opts = {}) {
@@ -188,6 +190,7 @@ export default {
   locale: locale.use,
   i18n: locale.i18n,
   install,
+  Drawer,
   CollapseTransition,
   Loading,
   Pagination,
